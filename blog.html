@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav role="navigation" class="deep-purple darken-1">
+          <div class="nav-wrapper container">
+            <a href="#!" class="brand-logo">Materialize</a>
+
+            <ul class="right hide-on-med-and-down">
+              <li><a href="./index.html">Home</a></li>
+              <li class="active"><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+
+
+            <ul id="burgerTr" class="sidenav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" data-target="burgerTr" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <section class="container section">
+        <div class="row"> 
+              <div class="col m12 l9">
+                 <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./assets/blog_1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                         
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">
+                            Card Title
+                            <i class="material-icons right">close</i>
+                        </span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./assets/blog_2.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">
+                            Card Title
+                            <i class="material-icons right">close</i>
+                        </span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col hide-on-med-and-down l3">
+                <ul class="collection with-header">
+                    <li class="collection-header deep-purple-text">
+                        <h4>First Names</h4>
+                    </li>
+                    <li class="collection-item pink-text">Alvin</li>
+                    <li class="collection-item pink-text">Alvin</li>
+                    <li class="collection-item pink-text">Alvin</li>
+             
+                  </ul>
+
+                  <ul class="collection">
+
+                    <li class="collection-item deep-purple-text">
+                        <h4>First Names</h4>
+                    </li>
+
+                    <li class="collection-item avatar">
+                      <img src="./assets/avatar_1.png" alt="" class="circle">
+                      <span class="title">name</span>
+                      <p>
+                        First Line 
+                        <br>
+                        Second Line
+                      </p>
+                    </li>
+                    <li class="collection-item avatar">
+                        <img src="./assets/avatar_1.png" alt="" class="circle">
+                        <span class="title">name</span>
+                        <p>
+                          First Line 
+                          <br>
+                          Second Line
+                        </p>
+                      </li>
+                      <li class="collection-item avatar">
+                        <img src="./assets/avatar_1.png" alt="" class="circle">
+                        <span class="title">name</span>
+                        <p>
+                          First Line 
+                          <br>
+                          Second Line
+                        </p>
+                      </li>
+                  </ul>
+
+              </div>
+  
+
+        
+
+           
+
+         
+           
+    
+        </div>
+      </section>
+
+      
+ 
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', 
+        function() {
+
+            M.Sidenav.init(document.querySelectorAll('.sidenav'));
+            M.Parallax.init(document.querySelectorAll('.parallax'));
+                
+        });
+
+      
+
+    </script>
+</body>
+</html>
